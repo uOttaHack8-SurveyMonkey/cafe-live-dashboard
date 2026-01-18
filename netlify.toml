@@ -1,6 +1,8 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  # QUAN TRỌNG: React App (react-scripts) xuất ra thư mục 'build', không phải '.next'
+  publish = "build"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# XÓA HOẶC COMMENT ĐOẠN DƯỚI ĐÂY NẾU CÓ:
+# [[plugins]]
+#   package = "@netlify/plugin-nextjs"
